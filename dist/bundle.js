@@ -71,30 +71,32 @@
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ exports["a"] = component;
-function component() {
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var component = exports.component = function component() {
   var element = document.createElement('div');
 
   /* lodash is required for the next line to work */
-  element.innerHTML = ['Hello', 'webpack'].map(function(item) {
+  element.innerHTML = ['Hello', 'webpack'].map(function (item) {
     return item + ' ';
   });
 
   return element;
-}
-
+};
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__component__ = __webpack_require__(0);
 
 
-document.body.appendChild(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__component__["a" /* default */])());
+var _component = __webpack_require__(0);
 
+document.body.appendChild((0, _component.component)());
 
 /***/ }
 /******/ ]);
